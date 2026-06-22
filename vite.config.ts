@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/oryx-demo/',
   server: {
     port: Number(process.env.PORT) || 5173,
   },
